@@ -1,0 +1,80 @@
+{
+<<<<<<< HEAD
+  "favoritos": [],
+  "assistidas": [],
+  "desejaAssistir": [],
+  "nomesUsuarios": [
+    "Karlos"
+=======
+  "favoritos": [
+    {
+      "id": 975,
+      "name": "Batman",
+      "language": "English",
+      "genres": [
+        "Comedy",
+        "Action",
+        "Adventure"
+      ],
+      "rating": {
+        "average": 7.8
+      },
+      "status": "Ended",
+      "premiered": "1966-01-12",
+      "ended": "1968-03-14",
+      "network": {
+        "name": "ABC"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/6/16463.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/6/16463.jpg"
+      }
+    },
+    {
+      "id": 54198,
+      "name": "The Bear",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Food"
+      ],
+      "rating": {
+        "average": 7.4
+      },
+      "status": "Running",
+      "premiered": "2022-06-23",
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/568/1421148.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/568/1421148.jpg"
+      }
+    },
+    {
+      "id": 26856,
+      "name": "You",
+      "language": "English",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Thriller"
+      ],
+      "rating": {
+        "average": 7.5
+      },
+      "status": "Ended",
+      "premiered": "2018-09-09",
+      "ended": "2025-04-24",
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/564/1412472.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/564/1412472.jpg"
+      }
+    }
+  ],
+  "assistidas": [],
+  "desejaAssistir": [],
+  "nomesUsuarios": [
+    "karlos",
+    "marcos"
+>>>>>>> 1840485 (API tv maze interface em Jframe)
+  ]
+}
