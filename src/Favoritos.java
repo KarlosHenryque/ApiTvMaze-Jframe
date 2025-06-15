@@ -1,10 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-<<<<<<< HEAD
-=======
 import java.util.stream.Collectors;
->>>>>>> 1840485 (API tv maze interface em Jframe)
 
 public class Favoritos implements IGerenciadorDeSeries {
 
@@ -18,41 +15,19 @@ public class Favoritos implements IGerenciadorDeSeries {
     public void adicionar(Series serie) {
         if (!lista.contains(serie)) {
             lista.add(serie);
-<<<<<<< HEAD
-            System.out.println("Série adicionada aos favoritos: " + serie.getName());
-        } else {
-            System.out.println("Série já está nos favoritos.");
-=======
->>>>>>> 1840485 (API tv maze interface em Jframe)
         }
     }
 
     @Override
     public void remover(int idSerie) {
-<<<<<<< HEAD
-        boolean removed = lista.removeIf(serie -> serie.getId() == idSerie);
-        if (removed) {
-            System.out.println("Série removida dos favoritos (ID: " + idSerie + ")");
-        } else {
-            System.out.println("Série com ID " + idSerie + " não encontrada nos favoritos.");
-        }
-=======
         lista.removeIf(serie -> serie.getId() == idSerie);
->>>>>>> 1840485 (API tv maze interface em Jframe)
     }
 
     @Override
     public void listar() {
-<<<<<<< HEAD
-        listarOrdenado(0);
-    }
-
-    public void listarOrdenado(int criterio) {
-=======
     }
 
     public String listarOrdenadoParaGUI(int criterio) {
->>>>>>> 1840485 (API tv maze interface em Jframe)
         List<Series> ordenada = new ArrayList<>(lista);
 
         switch (criterio) {
@@ -75,27 +50,6 @@ public class Favoritos implements IGerenciadorDeSeries {
                 break;
         }
 
-<<<<<<< HEAD
-        System.out.println("\n--- Séries Favoritas (Ordenadas) ---");
-        if (ordenada.isEmpty()) {
-            System.out.println("Nenhuma série nas favoritas.");
-            return;
-        }
-        for (Series serie : ordenada) {
-            System.out.println("Id: " + serie.getId() +
-                    "\n Nome: " + serie.getName() +
-                    "\n Idioma: " + serie.getLanguage() +
-                    "\n Gêneros: " + (serie.getGenres() != null && !serie.getGenres().isEmpty() ? String.join(", ", serie.getGenres()) : "N/A") +
-                    "\n Nota geral: " + (serie.getRating() != null && serie.getRating().getAverage() != null ? serie.getRating().getAverage() : "N/A") +
-                    "\n Estado: " + (serie.getStatus() != null ? serie.getStatus() : "Desconhecido") +
-                    "\n Data de estreia: " + (serie.getPremiered() != null ? serie.getPremiered() : "Desconhecida") +
-                    " | Data de término: " + (serie.getEnded() != null ? serie.getEnded() : "Desconhecida") +
-                    "\n Nome da emissora: " + (serie.getNetwork() != null ? serie.getNetwork().getName() : "Desconhecida") +
-                    "\n-------------------------------------");
-        }
-    }
-
-=======
         if (ordenada.isEmpty()) {
             return "Nenhuma série nas favoritas.";
         }
@@ -112,8 +66,6 @@ public class Favoritos implements IGerenciadorDeSeries {
                 .collect(Collectors.joining("\n"));
     }
 
-
->>>>>>> 1840485 (API tv maze interface em Jframe)
     @Override
     public List<Series> getLista() {
         return lista;

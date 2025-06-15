@@ -12,10 +12,7 @@ public class Series {
     private String premiered;
     private String ended;
     private Network network;
-<<<<<<< HEAD
-=======
-    private Image image; // Nested class for image URLs
->>>>>>> 1840485 (API tv maze interface em Jframe)
+    private Image image;
 
     public int getId() {
         return id;
@@ -89,8 +86,6 @@ public class Series {
         this.network = network;
     }
 
-<<<<<<< HEAD
-=======
     public Image getImage() {
         return image;
     }
@@ -99,7 +94,6 @@ public class Series {
         this.image = image;
     }
 
->>>>>>> 1840485 (API tv maze interface em Jframe)
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -136,8 +130,6 @@ public class Series {
             this.name = name;
         }
     }
-<<<<<<< HEAD
-=======
 
     public static class Image {
         private String medium;
@@ -159,5 +151,4 @@ public class Series {
             this.original = original;
         }
     }
->>>>>>> 1840485 (API tv maze interface em Jframe)
 }

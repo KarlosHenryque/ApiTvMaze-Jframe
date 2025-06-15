@@ -26,21 +26,11 @@ public class ConexaoApi {
             if (response.statusCode() == 200) {
                 return response.body();
             } else {
-<<<<<<< HEAD
-                System.out.println("Erro na requisição. Código: " + response.statusCode());
-            }
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        return null;
-=======
                 return null;
             }
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
             return null;
         }
->>>>>>> 1840485 (API tv maze interface em Jframe)
     }
 }
